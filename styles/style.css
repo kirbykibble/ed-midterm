@@ -1,0 +1,142 @@
+@font-face {
+	font-family: Orbital;
+	src: url("/styling/Orbitron Black.ttf");
+}
+body {
+	overflow: hidden;
+	font-family: Orbital;
+}
+#back-img {
+/*
+	position: fixed;
+	right:0;
+	left: 0;
+	background-image: url("/img/animatedBackground.gif");
+	background-size: fill;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100vh;
+	width: 100vw;
+	padding: 0;
+*/
+	
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 20%;
+	height: 20%;
+	background-image: url("/img/animatedBackground.gif");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom;
+/*	-webkit-filter: blur(1px) grayscale(0) brightness(1);*/
+	-webkit-transform-origin: top left;
+	-webkit-transform: scale(6);
+}
+#titleCont {
+	display: flex;
+	flex-flow: row;
+}
+#nameText {
+	margin-top: -5%;
+	opacity: 0;
+	margin-left: 1vw;
+	transition: all ease 1s;
+}
+#user {
+	position:absolute;
+	top: 150%;
+	display: flex;
+	flex-flow: column;
+/*	background-color: rgba(255,255,255,0.1);*/
+	border: none;
+	padding: 1vw;
+	transition: all ease 0.5s;
+}
+#username, #pfp {
+	background-color: rgba(255,255,255,0.1);
+/*	border: white 3px solid;*/
+	border:none;
+	border-radius: 2px;
+	width: 25vw;
+	height: 4vh;
+	margin-top: 1vh;
+}
+input[type=text] {
+	font-family: Orbital;
+	font-size: 1vw;
+	padding-left: 10px;
+	color: orange;
+}
+#allegiance {
+	color: orange;
+	font-family: Orbital;
+	font-size: 2vw;
+	margin-top: 1vh;
+}
+select {
+	margin-top: 1vh;
+	font-family: Orbital;
+	background-color: rgba(255,255,255,0.1);
+	border:none;
+	color: lightgray;
+}
+select option {
+	-webkit-appearance: none;
+	color: black;
+}
+
+#save {
+	margin-top: 1vh;
+	background-color: transparent;
+	text-align: left;
+	border: none;
+	font-family: Orbital;
+	font-size: 2vw;
+	color: orange;
+	transition: all ease 0.5s;
+}
+#save:hover {
+	transition: all ease 0.5s;
+	margin-left: 1vw;
+}
+#container {
+/*	border: solid black 2px;*/
+	position: absolute;
+	top: 30%;
+/*	bottom: 70%;*/
+	color: orange;
+	font-size: 4vw;
+	font-family: Orbital;
+	display: flex;
+	justify-content: center;
+	flex-flow: column;
+}
+#Words {
+	top: 0;
+	bottom: 0;
+	justify-content: center;
+}
+#moreWords {
+	font-size: 2vw;
+	margin-left: .5vw;
+}
+#start, #profile {
+	font-family: Orbital;
+	font-size: 2vw;
+	color: black;
+	text-align:left;
+	margin-top: 1vh;
+	background-color: transparent;
+	border: none;
+	transition: all ease 0.5s;
+}
+#start:hover, #profile:hover {
+	transition: all ease 0.5s;
+	margin-left: 1vw;
+}
+
+
+
+
+

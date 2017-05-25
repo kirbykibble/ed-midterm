@@ -1,0 +1,86 @@
+@font-face {
+	font-family: Orbital;
+	src: url("/styling/Orbitron Black.ttf");
+}
+body {
+	font-family: Orbital;
+	background-color: black;
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow-x: hidden;
+}
+#display {
+	background-color: rgba(255,255,255,0.1);
+	overflow-y: scroll;
+	height: 80vh;
+}
+#status {
+	color: orange;
+	background-color: rgba(255,255,255,0.1);
+	font-size: 3vw;
+	border-radius: 2px;
+	margin-bottom: 1vh;
+}
+#top {
+	display: flex;
+	flex-flow: row;
+	width: 100%;
+	margin-bottom: 1vh;
+}
+input {
+	background-color: rgba(255,255,255,0.1);
+/*	border: white 3px solid;*/
+	border:none;
+	border-radius: 2px;
+	height: 5vh;
+	transition: all ease 0.5s;
+	flex-grow: 3;
+}
+input[type=text] {
+	font-family: Orbital;
+	font-size: 1vw;
+	color: orange;
+/*	padding-left: 10px;*/
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #ffcc66;
+}
+#send {
+	height: 5vh;
+	flex-grow: 1;
+/*	margin-top: 1vh;*/
+	background-color: transparent;
+	text-align: left;
+	border: none;
+	font-family: Orbital;
+	font-size: 2vw;
+	color: orange;
+	transition: all ease 0.5s;
+}
+#send:hover {
+	margin-right: -1vw;
+	transition: all ease 0.5s;
+}
+#wrap {
+	font-size: 1.2vw;
+	background-color: rgba(255,255,255,0.1);
+	margin-top: 1vh;
+	color: lightgray;
+	word-wrap: normal;
+	display: flex;
+	flex-flow: row;
+	padding: 0.7%;
+}
+#text {
+	word-wrap: normal;
+	width: 70vw;
+}
+#PPic {
+	width: 2.4vw;
+	height: 2.4vw;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+/*	background-color: red;*/
+	margin-right: 1vw;
+}

@@ -1,22 +1,40 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>SCREAMING</title>
-		<script src="/scripts/indexbundle.js"></script>
+		<meta charset="UTF-8">
+		<script src="/socket.io/socket.io.js"></script>
+		<link rel="stylesheet" type="text/css" href="styling/style.css">
+		<script src="scripts/mainbundle.js"></script>
 
+		<title>Elite Dangerous ChatSite</title>
 	</head>
 	
 	<body>
-		<button ID="create">Play God</button>
-		<input type="text" placeholder="Dimension Name" ID="room"/>
-		
-		<div ID="allRooms"></div>
+		<div ID="back-img"></div>
+		<div ID="stuff">
+			<div ID="container">
+				<div ID="titleCont">
+					<div ID="Words">Welcome Commander </div>
+					<div ID="nameText"></div>
+				</div>
+				<div ID="moreWords">To Elite Dangerous Comms</div>
+				<button ID="start">Find A Channel</button>
+				<button ID="profile">Manage your Pilot's Federation Credentials</button>
+			</div>
+			
+			<div ID="user">
+				<input type="text" ID="username" placeholder="Username"/>
+				<input type="text" ID="pfp" placeholder="Profile Picture"/>
+				<!--*** HENRY *** this is my substitute for gender don't deduct marks or i will be sad thanks-->
+				<div ID="allegiance">Allegiance:</div>
+				<select ID="PaLL">
+					<option value="IND">Independent</option>
+					<option value="FED">Federation</option>
+					<option value="IMP">Imperial</option>
+					<option value="ALL">Alliance</option>
+				</select>
+				<button ID="save">Save</button>
+			</div>
+		</div>
 	</body>
-	<style>
-		body {
-			background-image: url("http://www.imgbase.info/images/safe-wallpapers/video_games/elite_dangerous/48755-elite_dangerous_wallpaper.jpg");
-			background-size: cover;
-			background-repeat: no-repeat;
-		}
-	</style>
 </html>

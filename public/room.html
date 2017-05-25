@@ -4,20 +4,15 @@
 		<title>ugh</title>
 		<script src="/socket.io/socket.io.js"></script>
 		<script src="/scripts/roombundle.js"></script>
-	
-		<style>
-			#status {
-				position: fixed;
-				bottom: 0;
-				left: 0;
-			}
-		</style>
+		<link rel="stylesheet" type="text/css" href="/styling/room.css">
 	</head>
 	
 	<body>
-		<input type="text" ID="msg"/>
-		<button ID="send">Declare your verdict</button>
-		<div ID="display"></div>
 		<div ID="status"></div>
+		<div ID="top">
+			<input type="text" ID="msg" placeholder="Send A Message"/>
+			<button ID="send">Send</button>
+		</div>
+		<div ID="display"></div>
 	</body>
 </html>

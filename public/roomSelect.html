@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="/styling/mainRoom.css">
+		<script src="/scripts/indexbundle.js"></script>
+
+		<title>SCREAMING</title>
+	</head>
+	
+	<body>
+		<div ID="show">Comm Menu</div>
+		<input type="text" placeholder="Custom Picture Url" ID="custPic"/>
+		<div ID="backImg"></div>
+		<div ID="createCont">
+			<div ID="textCont">
+				<input type="text" placeholder="Comm Name" ID="room"/>
+				<input type="text" placeholder="Comm Description" ID="desc"/>
+			</div>
+			<div ID="modifiers">
+				<div ID="typeName">Comm Type: </div>
+				<select ID="chanType">
+					<option value="/img/Galnet.png">Socialize</option>
+					<option value="/img/Rank-9k.png">Pilot's Federation</option>
+					<option value="/img/fuelrats.png">Help! Contact Fuel Rats</option>
+					<option value="custom">Custom Topic</option>
+				</select>
+			</div>
+			<button ID="create">Create a New Comm Channel</button>
+		</div>
+		
+		
+		<div ID="allRooms"></div>
+	</body>
+</html>
